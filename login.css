@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+:root {
+    --clr: #0ab3ff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(aboutbg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+hr {
+    border: 1px solid #E7E7E7;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    color: #0D98BA;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.burger {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.burger-menu .burger {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.header {
+    display: flex;
+    background-color: #f1f1f1;
+    padding: 5px 5px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header a {
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header a:hover {
+    background-color: #ddd;
+    color: #0D98BA;
+}
+
+.header a.active {
+    background-color: #0D98BA;
+    color: white;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 50;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+form h2 {
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    letter-spacing: 0.1em;
+    margin-bottom: 50px;
+}
+
+.inputBox {
+    position: relative;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #999;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.inputBox label {
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    color: #999;
+    text-transform: uppercase;
+}
+
+.inputBox label span {
+    display: inline-flex;
+    letter-spacing: 0.05em;
+    transition: 0.2s ease-in-out;
+}
+
+.inputBox input:focus ~ label span, .inputBox input:valid ~ label span {
+    color: var(--clr);
+    letter-spacing: 0.15em;
+    transform: translateY(-25px);
+}
+
+.inputBox input:focus, .inputBox input:valid {
+    border-bottom: 2px solid var(--clr);
+}
+
+.inputBox input[type="submit"] {
+    background: var(--clr);
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    color: #1c2530;
+    font-size: 1.15em;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+form p {
+    text-align: center;
+    color: #fff;
+}
+
+form p a {
+    color: var(--clr);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#footer-div {
+    width: 100%;
+    min-height: 50px;
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 50px;
+}
+
+#logo2-div {
+    float: left;
+    padding-top: .5%;
+    padding-left: 2.5%;
+}
+
+#name-div, #em-div {
+    text-align: justify;
+    padding-left: 125px;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #333;
+    color: white;
+}
+
+#footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#footer ul li {
+    margin: 10px 0;
+}
+
+#footer ul li.title {
+    font-weight: bold;
+}
+
+@media (max-width: 1030px) {
+    .header {
+        padding-left: 35%;
+    }
+}
+
+@media (max-width: 550px) {
+    .header {
+        padding-left: 12%;
+    }
+}
+
+@media (max-width: 500px) {
+    .admin-console-section {
+        flex-direction: column;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .dropdown {
+        font-size: 0;
+    }
+}
+
+@media (max-width: 1030px) {
+    .header-right {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}

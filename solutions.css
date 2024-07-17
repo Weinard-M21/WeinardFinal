@@ -1,0 +1,234 @@
+body {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.security-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.security-section h1 {
+    text-align: left;
+    margin-top: 20px;
+    color: black;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.security-section h2 {
+    text-align: left;
+    color: black;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.security-section h4 {
+    text-align: left;
+    color: black;
+}
+.security-section p{
+    text-align: left;
+    font-size: 1.15rem;
+}
+.proofs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.proof-banner {
+    color: black;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+    border-radius: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.proof-item {
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+.proof-item img {
+    height: 80px;
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.proof-text {
+    padding-top: 10%;
+    font-size: 40px;
+    color: #0D98BA;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 500;
+}
+
+.proof-item p, .way-item p {
+    font-size: 1em;
+    color: #333;
+}
+
+#content-div {
+    display: flex;
+    background-image: url('solbg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#vis-div {
+    padding-left: 10%;
+}
+
+.way-banner {
+    color: black;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+    border-radius: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.way-item {
+    max-width: 425px;
+    padding: 20px;
+    text-align: left;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    transition: transform .2s;
+}
+
+.ways {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.way-item:hover {
+    transform: scale(1.10);
+}
+  
+.way-item img {
+    border-radius: 10px;
+    max-width: 385px;
+    margin-bottom: 20px;
+}
+
+.admin-console-section {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.admin-console-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.admin-console-image img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.admin-console-text {
+    flex: 1;
+    padding: 0 50px;
+}
+
+.admin-console-text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.admin-console-text p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.admin-console-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admin-console-text ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.admin-console-text ul li::before {
+    content: "✔";
+    color: green;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.platforms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.platform-banner {
+    color: black;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.platform-item {
+    margin: 16px;
+    max-width: 250px;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+.platform-item img {
+    margin-bottom: 20px;
+}
+
+.platform-item p {
+    font-size: 1em;
+    color: #333;
+}
+
+.icons-div {
+    padding-bottom: 100%;
+    padding-left: 40%;
+}
+
+#if-div {
+    padding-top: 4.20%;
+}
+
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+}

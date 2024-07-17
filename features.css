@@ -1,0 +1,127 @@
+body {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.security-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.security-section h1 {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.features, .platforms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.platform-banner {
+    color: black;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+    border-radius: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feature-item {
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: transform .2s;
+}
+
+.platform-item {
+    margin: 16px;
+    max-width: 250px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+.feature-item:hover {
+  transform: scale(1.10);
+}
+
+.feature-item img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.platform-item img {
+    height: 80px;
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.feature-item p, .platform-item p {
+    font-size: 1em;
+    color: #333;
+}
+
+#content-div {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('aboutbg.jpg');
+}
+
+.offerings-container {
+    text-align: center;
+    padding: 20px;
+    background: #F0F2F5;
+    margin: 20px;
+}
+
+.offerings-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.offerings-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.offering {
+    width: 45%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.offering h3 {
+    color: #1a73e8;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.offering p {
+    font-size: 1em;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .offering {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

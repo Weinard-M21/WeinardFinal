@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Leader | SAFE, Inc.</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" style="text-decoration: none;">HOME</a>
+        <a href="features.html" style="text-decoration: none;">FEATURES</a>
+        <a href="pricing.html" style="text-decoration: none;">PRICING</a>
+        <a href="pplans.html" style="text-decoration: none;">PERSONAL PLANS</a>
+        <a href="bplans.html" style="text-decoration: none;">BUSINESS PLANS</a>
+        <a href="ipartners.html" style="text-decoration: none;">INDUSTRY PARTNERS</a>
+        <a href="solutions.html" style="text-decoration: none;">SOLUTIONS</a>
+        <a href="help.html" style="text-decoration: none;">HELP</a>
+        <a href="about.html" style="text-decoration: none;">ABOUT</a>
+        <a href="login.html" style="text-decoration: none;">LOGIN</a>
+    </div>
+
+    <div class="header">
+        &emsp;&emsp;<span onclick="openNav()">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div>
+        </span>&emsp;&emsp;
+        <a href="index.html"><img src="Text.png" width="150"></a>
+        <div class="header-left"></div>
+        <div class="header-right">
+            <a href="index.html">Home</a>&emsp;&emsp;
+            <div class="dropdown">
+                <a class="dropbtn">Why SAFE</a>&emsp;&emsp;
+                <div class="dropdown-content">
+                    <a href="features.html">Features</a>
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            <a href="pricing.html">Pricing</a>&emsp;&emsp;
+            <div class="dropdown">
+                <a class="dropbtn">Plans</a>&emsp;&emsp;
+                <div class="dropdown-content">
+                    <a href="pplans.html">Personal Plan</a>
+                    <a href="bplans.html">Business Plan</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn">Partners</a>&emsp;&emsp;
+                <div class="dropdown-content">
+                    <a href="ipartners.html">Industry Partners</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn">Support</a>&emsp;&emsp;
+                <div class="dropdown-content">
+                    <a href="solutions.html">Solutions</a>
+                    <a href="help.html">Help</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="login.html">Login</a>&emsp;&emsp;&emsp;&emsp;
+            </div>
+        </div>
+    </div><hr><br><br>
+
+    <form action="https://formsubmit.co/slsuls.weinardmanianglung@gmail.com" method="POST">
+        <h2>New Account</h2>
+        <div class="inputBox">
+            <input type="text" name="Username" required>
+            <label>Username</label>
+        </div>
+        <div class="inputBox">
+            <input type="email" name="email" required>
+            <label>Email</label>
+        </div>
+        <div class="inputBox">
+            <input type="password" name="password" required>
+            <label>Password</label>
+        </div>
+        <div class="inputBox">
+            <input type="password" name="cpassword" required>
+            <label>Confirm&nbsp;Password</label>
+        </div>
+        <div class="inputBox">
+            <input type="submit" value="Create">
+        </div>
+        <p>Already have an Account? <a href="login.html">Login</a></p>
+    </form><hr><br><br>
+
+    <div id="footer-div">
+        <div id="logo2-div">
+            <a href="Flame.png"><img src="Flame.png" width="50"></a>
+        </div>
+        <div id="name-div">
+            Weinard D. Manianglung
+        </div>
+        <div id="em-div">
+            <a href="mailto:manianglung.w@gmail.com">manianglung.w@gmail.com</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('label').forEach(label => {
+            label.innerHTML = label.innerText.split('').map((letter, i) =>
+                `<span style="transition-delay: ${i * 50}ms">${letter}</span>`
+            ).join('');
+        });
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>

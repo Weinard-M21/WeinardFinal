@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.security-banner {
+    color: black;
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('plansbg.png');
+    border-radius: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.security-banner .subtitle {
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.security-banner .description {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.admin-console-section {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.admin-console-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.admin-console-image img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.admin-console-text {
+    flex: 1;
+    padding: 0 50px;
+}
+
+.admin-console-text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.admin-console-text p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.admin-console-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admin-console-text ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.admin-console-text ul li::before {
+    content: "✔";
+    color: green;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.start-section{
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .admin-console-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .admin-console-image,
+    .admin-console-text {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .admin-console-text h2 {
+        font-size: 1.5em;
+    }
+
+    .admin-console-text p,
+    .admin-console-text ul li {
+        font-size: 1em;
+    }
+}
